@@ -1,5 +1,6 @@
 body{
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar{
@@ -42,7 +43,7 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
 }
 
 .library{
@@ -71,7 +72,7 @@ body{
     border: 0;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -112,7 +113,7 @@ body{
 .section-playlist__content .text{
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
 }
 
 .section-playlist__content .title{
@@ -134,7 +135,7 @@ body{
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
     text-decoration: none;
     text-transform: none;
     border: 0px;
@@ -174,7 +175,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #101926, #2bdefd);
+    background: linear-gradient(to right, #4B07D0, #825AD0);
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -182,15 +183,16 @@ body{
 
 .footer__content .text{
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
     flex-shrink: 0;
 }
 
 .footer__content .footer__content__title{
     display: flex;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
