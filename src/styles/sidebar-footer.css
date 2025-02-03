@@ -78,8 +78,17 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     padding: 4px 8px;
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
+}
+
+.library .library__text{
+    font-size: 20px;
+}
+
+.library i{
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .library .library__content{
@@ -105,15 +114,54 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 .library .library__button .fa{
     font-size: 20px;
     margin-right: 10px;
-    font-weight: 300;
     padding-right: 8px;
     color: #b3b3b3;
 }
 
 .library .library__content .fa-plus{
-    margin: 24px 10px;
+    margin: 20px 10px;
+    margin-right: 30px;
 }
 
+
+/* DIV DAS PLAYLIST E PODCAST */
+.playlist-podcast__content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Adiciona a rolagem vertical */
+    max-height: 200px; /* Define uma altura máxima para o conteúdo */
+    justify-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    margin-bottom: 10px;
+}
+
+/* Estilizando a barra de rolagem */
+.playlist-podcast__content::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+.playlist-podcast__content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da parte que pode ser arrastada */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.playlist-podcast__content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+}
+
+.playlist-podcast__content::-webkit-scrollbar-track {
+    background: transparent; /* Fundo da barra de rolagem */
+}
+
+/* Para ocultar a barra de rolagem quando não está em uso */
+.playlist-podcast__content {
+    scrollbar-width: thin; /* Para navegadores Firefox */
+    scrollbar-color: transparent transparent; /* Para navegadores Firefox */
+}
+
+/* ÁREA PLAYLIST */
 .section-playlist{
     display: flex;
     align-items: flex-start;
@@ -145,7 +193,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 
 .section-playlist__content .subtitle{
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .section-playlist__content .section-playlist__button{
@@ -163,6 +211,58 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     text-transform: none;
     border: 0px;
     width: 113px;
+}
+
+/* ÁREA DO PODCAST */
+.section-podcast{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-podcast .section-podcast__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-podcast__content .text{
+    padding-bottom: 14px;
+    color: #fff;
+    font-family: var(--font-dm-sans);
+}
+
+.section-podcast__content .title{
+    font-weight: 700;
+}
+
+.section-podcast__content .subtitle{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.section-podcast__content .section-podcast__button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 12px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font-dm-sans);
+    text-decoration: none;
+    text-transform: none;
+    border: 0px;
+    width: 150px;
 }
 
 .sidebar .cookies{
@@ -199,7 +299,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     left: 0;
     right: 0;
     background: linear-gradient(to right, #4B07D0, #825AD0);
-    padding: 15px 40px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -226,6 +326,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .footer__content button{
+    position: relative; /* Para posicionar os emojis em relação ao botão */
     font-size: 16px;
     font-weight: bold;
     padding: 14px 30px;
@@ -236,5 +337,13 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     border-radius: 40px;
     flex-shrink: 0;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.footer__content button:hover {
+    background-color: #4B07D0;
+    color: white;
+    transform: scale(1.1);
+}
+
 

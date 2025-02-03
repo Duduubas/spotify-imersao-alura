@@ -38,6 +38,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
+    margin-top: 25px;
 }
 
 .header__navigation .navigation{
@@ -74,7 +75,11 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+    transition: transform 0.3s ease;
+}
 
+.header__login .subscribe:hover{
+    transform: scale(1.1);
 }
 
 .header__login .login{
@@ -85,8 +90,14 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     font-weight: 700;
     border-radius: 40px;
     background-color: #4B07D0;
+    transition: transform 0.3s ease;
 }
 
+.header__login .login:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
 
 .header__search{
     display: flex;
@@ -114,4 +125,10 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+}
+
+.header__search i {
+    color: white; /* Mantenha a cor que você deseja */
+    font-size: 20px; /* Altere para o tamanho desejado */
+    margin-left: 10px;
 }
